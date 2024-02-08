@@ -1,0 +1,91 @@
+﻿  FileName.cpp
+D:\vsIDE\VC\Tools\MSVC\14.37.32822\include\unordered_map(50,99): error C2280: “std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::_Uhash_compare(const std::_Uhash_compare<_Kty,_Hasher,_Keyeq> &)”: 尝试引用已删除的函数
+          with
+          [
+              _Kty=Node,
+              _Hasher=std::hash<Node>,
+              _Keyeq=std::equal_to<Node>
+          ]
+D:\vsIDE\VC\Tools\MSVC\14.37.32822\include\xhash(176,1): message : 编译器已在此处生成“std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::_Uhash_compare”
+          with
+          [
+              _Kty=Node,
+              _Hasher=std::hash<Node>,
+              _Keyeq=std::equal_to<Node>
+          ]
+D:\vsIDE\VC\Tools\MSVC\14.37.32822\include\xhash(176,1): message : “std::_Uhash_compare<_Kty,_Hasher,_Keyeq>::_Uhash_compare(const std::_Uhash_compare<_Kty,_Hasher,_Keyeq> &)”: 由于 数据成员 调用已删除或不可访问的函数“std::_Compressed_pair<_Hasher,std::_Compressed_pair<_Keyeq,float,true>,true>::_Compressed_pair(const std::_Compressed_pair<_Hasher,std::_Compressed_pair<_Keyeq,float,true>,true> &)”，因此已隐式删除函数
+          with
+          [
+              _Kty=Node,
+              _Hasher=std::hash<Node>,
+              _Keyeq=std::equal_to<Node>
+          ]
+          and
+          [
+              _Hasher=std::hash<Node>,
+              _Keyeq=std::equal_to<Node>
+          ]
+D:\vsIDE\VC\Tools\MSVC\14.37.32822\include\xmemory(1529,1): message : “std::_Compressed_pair<_Hasher,std::_Compressed_pair<_Keyeq,float,true>,true>::_Compressed_pair(const std::_Compressed_pair<_Hasher,std::_Compressed_pair<_Keyeq,float,true>,true> &)”: 由于 基类 调用已删除或不可访问的函数“std::hash<Node>::hash(const std::hash<Node> &)”，因此已隐式删除函数
+          with
+          [
+              _Hasher=std::hash<Node>,
+              _Keyeq=std::equal_to<Node>
+          ]
+D:\vsIDE\VC\Tools\MSVC\14.37.32822\include\type_traits(2411,1): message : “std::hash<Node>::hash(const std::hash<Node> &)”: 由于 基类 调用已删除或不可访问的函数“std::_Conditionally_enabled_hash<_Kty,false>::_Conditionally_enabled_hash(const std::_Conditionally_enabled_hash<_Kty,false> &)”，因此已隐式删除函数
+          with
+          [
+              _Kty=Node
+          ]
+D:\vsIDE\VC\Tools\MSVC\14.37.32822\include\type_traits(2398,5): message : “std::_Conditionally_enabled_hash<_Kty,false>::_Conditionally_enabled_hash(const std::_Conditionally_enabled_hash<_Kty,false> &)”: 已隐式删除函数
+          with
+          [
+              _Kty=Node
+          ]
+D:\vsIDE\VC\Tools\MSVC\14.37.32822\include\unordered_map(50,5): message : 在编译 类 模板 成员函数“std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>::_Umap_traits(const _Tr &) noexcept(false)”时
+          with
+          [
+              _Kty=Node,
+              _Ty=int,
+              _Hasher=std::hash<Node>,
+              _Keyeq=std::equal_to<Node>,
+              _Alloc=std::allocator<std::pair<const Node,int>>,
+              _Tr=std::_Uhash_compare<Node,std::hash<Node>,std::equal_to<Node>>
+          ]
+D:\vsIDE\VC\Tools\MSVC\14.37.32822\include\xhash(376,21): message : 请参阅 "std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::_Hash" 中对 "std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>::_Umap_traits" 的第一个引用
+          with
+          [
+              _Kty=Node,
+              _Ty=int,
+              _Hasher=std::hash<Node>,
+              _Keyeq=std::equal_to<Node>,
+              _Alloc=std::allocator<std::pair<const Node,int>>
+          ]
+D:\vsIDE\VC\Tools\MSVC\14.37.32822\include\unordered_map(107,30): message : 请参阅 "std::unordered_map<Node,int,std::hash<Node>,std::equal_to<Node>,std::allocator<std::pair<const Node,int>>>::unordered_map" 中对 "std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>::_Hash" 的第一个引用
+          with
+          [
+              _Kty=Node,
+              _Ty=int,
+              _Hasher=std::hash<Node>,
+              _Keyeq=std::equal_to<Node>,
+              _Alloc=std::allocator<std::pair<const Node,int>>
+          ]
+C:\Users\30944\source\repos\左成云学习\左成云学习\FileName.cpp(80,26): message : 请参阅 "main" 中对 "std::unordered_map<Node,int,std::hash<Node>,std::equal_to<Node>,std::allocator<std::pair<const Node,int>>>::unordered_map" 的第一个引用
+D:\vsIDE\VC\Tools\MSVC\14.37.32822\include\xhash(335,1): message : 查看对正在编译的 类 模板 实例化“std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>”的引用
+          with
+          [
+              _Kty=Node,
+              _Ty=int,
+              _Hasher=std::hash<Node>,
+              _Keyeq=std::equal_to<Node>,
+              _Alloc=std::allocator<std::pair<const Node,int>>
+          ]
+D:\vsIDE\VC\Tools\MSVC\14.37.32822\include\unordered_map(67,30): message : 查看对正在编译的 类 模板 实例化“std::_Hash<std::_Umap_traits<_Kty,_Ty,std::_Uhash_compare<_Kty,_Hasher,_Keyeq>,_Alloc,false>>”的引用
+          with
+          [
+              _Kty=Node,
+              _Ty=int,
+              _Hasher=std::hash<Node>,
+              _Keyeq=std::equal_to<Node>,
+              _Alloc=std::allocator<std::pair<const Node,int>>
+          ]
+C:\Users\30944\source\repos\左成云学习\左成云学习\FileName.cpp(36,16): message : 查看对正在编译的 类 模板 实例化“std::unordered_map<Node,int,std::hash<Node>,std::equal_to<Node>,std::allocator<std::pair<const Node,int>>>”的引用

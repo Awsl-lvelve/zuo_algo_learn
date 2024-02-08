@@ -1,0 +1,3 @@
+﻿  FileName.cpp
+C:\Users\30944\source\repos\左成云学习\二叉树\FileName.cpp(71): warning C4715: “BiTree::post_order_traverse_”: 不是所有的控件路径都返回值
+  二叉树.vcxproj -> C:\Users\30944\source\repos\左成云学习\x64\Debug\二叉树.exe
